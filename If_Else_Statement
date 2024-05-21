@@ -5,25 +5,19 @@ package com.main;
  Practical 2 from core java practicals
  @author Mashuk Patel
  */
-
 public class If_Else_Statement {
 
 	public static void main(String[] args) {
-		
 		int age=18; 
-		if( age >= 0 && age <= 18 )
-		{
+		if(age >= 0 && age <= 18) {
 			System.out.println("Age is between 0 and 18.");
 		}
-		else if( age >= 19 && age <= 35 )
-		{
+		else if(age >= 19 && age <= 35) {
 			System.out.println("Age is between 19 and 35.");
 		}
-		else
-		{
+		else {
 			System.out.println("Age is above 35.");
 		}
-		
 	}
 	
 }
