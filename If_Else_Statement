@@ -5,7 +5,7 @@ package com.main;
  Practical 2 from core java practicals
  @author Mashuk Patel
  */
-public class If_Else_Statement {
+public class IfElseStatement {
 
 	public static void main(String[] args) {
 		int age=18; 
