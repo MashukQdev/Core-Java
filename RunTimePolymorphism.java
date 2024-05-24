@@ -1,4 +1,4 @@
-package com.main;
+package com.oops;
 
 /**
  Simple program to demonstrate use of runtime polymorphism
@@ -7,13 +7,13 @@ package com.main;
  */
 
 /**
- class which contain method to display simple print statement
+ This class contain a method to display a message on console 
  */
 class Electronics {
 	
 	/**
-	 method contain simple print statement which takes string input
-	 * @param name name is taken as input
+	 It display a statement showing electronic computer name
+	 @param name The name of the computer
 	 */
 	public void computer(String name) {
 		System.out.println("Electronic Computer name is : " + name);
@@ -22,13 +22,13 @@ class Electronics {
 }
 
 /**
-class which contain method to display simple print statement
+ This class contain a method to display a message on console
 */
 class Appliances extends Electronics{
 	
 	/**
-	 method contain simple print statement which takes string input
-	 * @param name name is taken as input
+	 It display a statement showing appliances computer name
+	 @param name The name of the computer
 	 */
 	public void computer(String name) {
 		System.out.println("Appliances computer name is : " + name);
