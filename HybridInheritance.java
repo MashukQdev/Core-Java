@@ -1,4 +1,4 @@
-package com.main;
+package com.oops;
 
 /**
  Simple program to demonstrate use of hybrid inheritance
@@ -7,12 +7,12 @@ package com.main;
  */
 
 /**
- class contain method which have simple print statement
+ This class contain method which print a message on console
  */
 class Gold {
 	
 	/**
-	 method contain print statement to identify gold class
+	 It print a message on console to identify gold class
 	 */
 	public void goldMethod() {
 		System.out.println("This is gold class.");
@@ -21,12 +21,13 @@ class Gold {
 }
 
 /**
-class contain method which have simple print statement
+ This class extend the class Gold
+ It contain a method to print a statement
 */
 class Silver extends Gold {
 	
 	/**
-	 method contain print statement to identify silver class
+	 It print a message on console to identify silver class
 	 */
 	public void silverMethod() {
 		System.out.println("This is silver class.");
@@ -35,12 +36,13 @@ class Silver extends Gold {
 }
 
 /**
-class contain method which have simple print statement
+ This class extend the class Gold
+ It contain a method to print a statement
 */
 class Bronze extends Gold {
 	
 	/**
-	 method contain print statement to identify bronze class
+	 It print a message on console to identify bronze class
 	 */
 	public void bronzeMethod() {
 		System.out.println("This is bronze class.");
@@ -49,12 +51,13 @@ class Bronze extends Gold {
 }
 
 /**
-class contain method which have simple print statement
+ This class extend the class Bronze
+ It contain a method to print a statement
 */
 class Platinum extends Bronze {
 	
 	/**
-	 method contain print statement to identify platinum class
+	 It print a message on console to identify platinum class
 	 */
 	public void platinumMethod() {
 		System.out.println("This is platinum class.");
