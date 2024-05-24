@@ -1,4 +1,4 @@
-package com.main;
+package com.oops;
 
 /**
  Simple programe to demonstrate use of abstract keyword
@@ -7,8 +7,7 @@ package com.main;
  */
 
 /**
- it is abstract class containe 1 variable and an abstract method
- As we cannot create object of abstract method so we must extend it into child class
+ This abstract class contain one integer variable and an abstract method
  */
 abstract class AbstractClass {
 	
@@ -21,11 +20,14 @@ abstract class AbstractClass {
 	
 }
 
+/**
+ This class extend the abstract class AbstractClass and implements its abstract method
+ */
 class NonAbstractClass extends AbstractClass {
 
 	@Override
 	/**
-	 this method is abstract method just to print message.
+	 This method is an abstract method override from the parent class just to print message.
 	 */
 	void printHello() {
 		System.out.println("This is a abstract method declare in parent class.");
@@ -38,7 +40,8 @@ public class AbstractKeyword {
 	public static void main(String[] args) {
 		NonAbstractClass test = new NonAbstractClass();
 		test.printHello();
-		System.out.println("Printing variable that is declare in abstract class through child class : " + test.number);
+		
+		System.out.println("Printing variable that is declare in abstract class through child class : " + test.number);   // print abstract class variable
 	}
 	
 }
