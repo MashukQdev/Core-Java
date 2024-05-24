@@ -1,4 +1,4 @@
-package com.main;
+package com.oops;
 
 /**
  Simple program to use compile time polymorphism 
@@ -7,29 +7,30 @@ package com.main;
  */
 
 /**
- class contain 3 methods of same name but different parameters
+ This class contain methods to display statements related to vehicle speed.
+ It contain 3 methods with same name but argumnets are different
  */
 class VehicleSpeed {
 	
 	/**
-	 simple method to display print statement
+	 Simple method to display print statement at vehicle running at constant speed
 	 */
 	public void speed() {
 		System.out.println("Car is running at constant speed.");
 	}
 	
 	/**
-	 simple method to display print statement
-	 * @param speed speed is taken as input 
+	 Display a statement indicating the speed of the car.
+	 @param speed The speed of the car 
 	 */
 	public void speed(int speed) {
 		System.out.println("Car is running at speed " + speed + "km/h.");
 	}
 	
 	/**
-	 simple method to display print statement
-	 * @param speed speed is taken as input
-	 * @param destination destination is taken as input 
+	 Displays a statement indicating the speed and destination of the car.
+	 @param speed The speed of the car
+	 @param destination The destination where car is going 
 	 */
 	public void speed(int speed, String destination) {
 		System.out.println("Car is running at speed " + speed +"km/h to reach " + destination + ".");
