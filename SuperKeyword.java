@@ -7,12 +7,16 @@ package com.main;
  */
 
 /**
- In this class I declare int variable number and assigned value to it 
+ This class initialize an integer variable and sets its value to 7.
  */
 class First {
 	
 	int number;
 	
+	/**
+	 Constructor of class First
+	 It assign value 7 to variable number
+	 */
 	public First() {
 		number = 7;
 	}
@@ -20,13 +24,18 @@ class First {
 }
 
 /**
- This class contain the use of super keyword
- First class is extended  
+This class extends the First class 
+It initialize an integer variable 'number' and override the parent class variable
+It demonstrate the use of super keyword by accessing parent class variable value 
  */
 class Second extends First {
 	
 	int number = 19;
 	
+	/**
+	 Constructor of class Second
+	 Prints the value of 'number' variable of this class and it's parent class also 
+	 */
 	public Second() {
 		System.out.println(number);
 		System.out.println(super.number); // super keyword is used to access the reference of parent class
