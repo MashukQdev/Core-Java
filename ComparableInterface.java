@@ -10,23 +10,33 @@ import java.util.Collections;
  */
 
 /**
- class contain employee details and implements comparable 
- comparable interface override compareTo() method
+ This class contain employee details and implements comparable interface
+ Comparable interface override compareTo() method
  */
 class Employee implements Comparable<Employee> {
 	
 	int id;
 	String name;
-	String desg;
+	String designation;
 	
-	public Employee(int id, String name, String desg) {
-		super();
+	/**
+	 Constructor of class Employee
+	 * @param id The id of the employee
+	 * @param name The name of the employee
+	 * @param designation The designation of the employee
+	 */
+	public Employee(int id, String name, String designation) {
 		this.id = id;
 		this.name = name;
-		this.desg = desg;
+		this.designation = designation;
 	}
-
+	
 	@Override
+	/**
+	 Compares this employee with the specified employee based on their IDs
+	 @param o The employee to be compared
+	 @return A negative integer, zero, or a positive integer if this employee's ID is less than, equal to, or greater than the specified employee's ID.
+	 */
 	public int compareTo(Employee o) {
 		return id - o.id;
 	}
@@ -36,17 +46,18 @@ class Employee implements Comparable<Employee> {
 public class ComparableInterface {
 
 	public static void main(String[] args) {
-		ArrayList<Employee> list = new ArrayList<Employee>();
+		ArrayList<Employee> list = new ArrayList<Employee>();     // initialize list
 		list.add(new Employee(1, "Aman", "HR"));
 		list.add(new Employee(10, "Ram", "Java Developer"));
 		list.add(new Employee(5, "Lakhan", ".NET Developer"));
 		list.add(new Employee(13, "Milan", "Mobile Developer"));
 		list.add(new Employee(11, "Rocky", "Bussiness Analyst"));
-		Collections.sort(list);
+		
+		Collections.sort(list);    // sort collection
+		
 		for(Employee emp : list) {
-			System.out.println(emp.id + " " + emp.name + " " + emp.desg);
+			System.out.println(emp.id + " " + emp.name + " " + emp.designation);   // printing collections data
 		}
 	}
 	
 }
-
