@@ -11,7 +11,7 @@ import java.util.Comparator;
  */
 
 /**
- class contain details of staff members
+ This class contain details of staff members
  */
 class Staff {
 	
@@ -19,8 +19,13 @@ class Staff {
 	String name;
 	String post;
 	
+	/**
+	 Constructor of class Staff
+	 * @param id The id of the staff
+	 * @param name The name of the staff
+	 * @param post The post of the staff
+	 */
 	public Staff(int id, String name, String post) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.post = post;
@@ -30,11 +35,17 @@ class Staff {
 
 /**
  Comparator interface is implemented to the class for id comparison
- method of the interface is override
+ Method of the comparator interface is override
  */
 class IdComparison implements Comparator<Staff> {
 
 	@Override
+	/**
+	 Compares two Staff objects based on their IDs.
+	 @param s1 The first Staff object to be compared.
+     @param s2 The second Staff object to be compared.
+     @return A negative integer, zero, or a positive integer if the ID of the first Staff object is less than, equal to, or greater than the ID of the second Staff object, respectively.
+	 */
 	public int compare(Staff s1, Staff s2) {
 		if(s1.id > s2.id) {
 			return 1;
@@ -51,11 +62,17 @@ class IdComparison implements Comparator<Staff> {
 
 /**
 Comparator interface is implemented to the class for name comparison
-method of the interface is override
+Method of the comparator interface is override
 */
 class NameComparison implements Comparator<Staff>{
 
 	@Override
+	/**
+	 Compares two Staff objects based on their IDs.
+	 @param s1 The first Staff object to be compared.
+     @param s2 The second Staff object to be compared.
+     @return A negative integer, zero, or a positive integer if the ID of the first Staff object is less than, equal to, or greater than the ID of the second Staff object, respectively.
+	 */
 	public int compare(Staff s1, Staff s2) {
 		return s1.name.compareTo(s2.name);
 	}
@@ -84,4 +101,3 @@ public class ComparatorInterface {
 	}
 	
 }
-
