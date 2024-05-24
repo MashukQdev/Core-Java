@@ -7,13 +7,12 @@ package com.main;
  */
 public class WrapperClass {
 
-	public static void main(String[] args) {
-		Integer a=new Integer(30);
-		Integer b=new Integer(30);
-		if(a.equals(b)) {
+	public static void main(String[] args) {        
+		Integer First = new Integer(30);   
+		Integer Second = new Integer(30);
+		if(First.equals(Second)) {
 			System.out.println("Both the variables are same.");
-		}
-		else {
+		} else {
 			System.out.println("Both the variables are not same.");
 		}
 	}
