@@ -1,4 +1,4 @@
-package com.main;
+package com.oops;
 
 /**
  Simple program to demonstrate use of hierarchical inheritance
@@ -7,13 +7,13 @@ package com.main;
  */
 
 /**
- class contain method just to display print statement
+ This class contain method which print a message on console
  */
 class Vehicle {    // parent class here single parent having 2 or more child 
 	
 	/**
-	 method contain only one print statement 
-	 @param name name is taken as input 
+	 It print a message to console 
+	 @param name The name of the vehicle 
 	 */
 	public void runVehicle(String name) {
 		System.out.println(name + " is running.");
@@ -22,13 +22,14 @@ class Vehicle {    // parent class here single parent having 2 or more child
 }
 
 /**
-class contain method just to display print statement
+ This class extend the class Vehicle 
+ It contain method which return string
 */
 class Bike extends Vehicle {   // child class for vehicle
 	
 	/**
-	 method contain only one print statement 
-	 @param name name is taken as input 
+	 This method return string value 
+	 @return The name of the object to be sent.
 	 */
 	public String sendName() {
 		return "Bike";
@@ -37,13 +38,14 @@ class Bike extends Vehicle {   // child class for vehicle
 }
 
 /**
-class contain method just to display print statement
+ This class extend the class Vehicle 
+ It contain method which return string
 */
 class Cycle extends Vehicle {   // child class for vehicle
 	
 	/**
-	 method contain only one print statement 
-	 @param name name is taken as input 
+	 This method return string value 
+	 @return The name of the object to be sent.
 	 */
 	public String sendName() {
 		return "Cycle";
@@ -54,9 +56,10 @@ class Cycle extends Vehicle {   // child class for vehicle
 public class HierarchicalInheritance {
 
 	public static void main(String[] args) {
-		Bike b1 = new Bike();
+		Bike b1 = new Bike();    // create object of class Bike
 		b1.runVehicle(b1.sendName());
-		Cycle c1 = new Cycle();
+		
+		Cycle c1 = new Cycle();  // create object of class Cycle
 		c1.runVehicle(c1.sendName());
 	}
 	
