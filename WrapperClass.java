@@ -8,9 +8,9 @@ package com.main;
 public class WrapperClass {
 
 	public static void main(String[] args) {        
-		Integer First = new Integer(30);   
-		Integer Second = new Integer(30);
-		if(First.equals(Second)) {
+		Integer first = new Integer(30);   
+		Integer second = new Integer(30);
+		if(first.equals(second)) {
 			System.out.println("Both the variables are same.");
 		} else {
 			System.out.println("Both the variables are not same.");
