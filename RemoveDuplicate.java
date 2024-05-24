@@ -12,7 +12,7 @@ import java.util.Iterator;
 public class RemoveDuplicate {
 
 	public static void main(String[] args) {
-		ArrayList<Character> list = new ArrayList<Character>();
+		ArrayList<Character> list = new ArrayList<Character>();  // initialize list
 		list.add('A');
 		list.add('B');
 		list.add('C');
@@ -22,14 +22,17 @@ public class RemoveDuplicate {
 		list.add('E');
 		list.add('E');
 		list.add('E');
-		System.out.println("List elements are : " + list);
-		HashSet<Character> set = new HashSet<Character>();
+		
+		System.out.println("List elements are : " + list);  // printing list elements
+		
+		HashSet<Character> set = new HashSet<Character>();  // initialize set
+		
 		Iterator<Character> itr = list.iterator();
 		while(itr.hasNext()) {
-			set.add(itr.next());
+			set.add(itr.next());    // adding list elements in set but it will not add duplicates
 		}
-		System.out.println("List elements after removing duplicates are : " + set);
+		
+		System.out.println("List elements after removing duplicates are : " + set);  // printing set elements
 	}
 	
 }
-
