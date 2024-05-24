@@ -11,20 +11,24 @@ import java.util.Iterator;
 public class SetExample {
 
 	public static void main(String[] args) {
-		HashSet<String> set = new HashSet<String>();
+		HashSet<String> set = new HashSet<String>();   //  // initialize set
 		set.add("Hello");
 		set.add("World");
 		set.add("Mashuk");
 		set.add("Ahmedabad");
 		set.add("QDev");
-		set.add("QDev");   // set does not allow duplicate vlaues 
+		
+		set.add("QDev");   // set does not allow duplicate values 
+		
 		set.remove("World");   // set allows to remove elements by its value only
+		
 		System.out.println("Printing all elemets from set using iterator : ");
 		Iterator<String> itr = set.iterator();
 		while(itr.hasNext()) {
-			System.out.println(itr.next());
+			System.out.println(itr.next());    // printing all set elements
 		}
-		System.out.println("Search in set is Ahmedabad present? " + set.contains("Ahmedabad"));
+		
+		System.out.println("Search in set is Ahmedabad present? " + set.contains("Ahmedabad"));    // searching in set 
 	}
 	
 }
