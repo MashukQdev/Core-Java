@@ -1,4 +1,4 @@
-package com.main;
+package com.oops;
 
 /**
  Simple program to use multi-level inheritance
@@ -7,12 +7,12 @@ package com.main;
  */
 
 /**
- Simple class which contain print statement method 
+ This class contain method which print a message on console 
  */
 class GrandParent {      // grandparent class
 	
 	/**
-	 method to print a simple statement 
+	 This method print a message to show that it is grandparent class 
 	 */
 	public void grandparentmethod() {
 		System.out.println("This is a grandparent class.");
@@ -21,12 +21,13 @@ class GrandParent {      // grandparent class
 }
 
 /**
-Simple class which contain print statement method 
+ This class extend the class GrandParent 
+ It contain method which print a message on console
 */
 class OneParent extends GrandParent {      // parent class
 	
 	/**
-	 method to print a simple statement 
+	 This method print a message to show that it is parent class for class OneChild and child class for class GrandParent
 	 */
 	public void parentmethod() {
 		System.out.println("This is a parent class.");
@@ -35,12 +36,13 @@ class OneParent extends GrandParent {      // parent class
 }
 
 /**
-Simple class which contain print statement method 
+ This class extend the class OneParent 
+ It contain method which print a message on console
 */
 class OneChild extends OneParent {       // child class
 	
 	/**
-	 method to print a simple statement 
+	 This method print a message to show it is child class for class Oneparent 
 	 */
 	public void childmethod() {
 		 System.out.println("This is a child class.");
