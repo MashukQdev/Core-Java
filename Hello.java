@@ -3,7 +3,7 @@ package com.main;
 /**
 Simple program to print hello world
 Practical 1 from core java practicals
-@author Mashuk Patel
+@author Mashuk Patel from himmatnagar
  */
 public class Hello {
 	
